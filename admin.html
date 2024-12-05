@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Control Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Control Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="#user-monitoring">User Role Monitoring</a></li>
+                <li><a href="#issue-management">Issue Management</a></li>
+                <li><a href="#profile-suspension">Profile Suspension</a></li>
+                <li><a href="#feedback-review">Feedback Review</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- User Role Monitoring Section -->
+        <section id="user-monitoring">
+            <h2>User Role Monitoring</h2>
+            <div class="user-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Username</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-table-body">
+                        <!-- Data loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Issue Management Section -->
+        <section id="issue-management">
+            <h2>Issue Management</h2>
+            <div class="issue-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Issue ID</th>
+                            <th>Reported User</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="issue-table-body">
+                        <!-- Data loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Profile Suspension Section -->
+        <section id="profile-suspension">
+            <h2>Profile Suspension</h2>
+            <div class="profile-suspension-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Username</th>
+                            <th>Reason</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="suspension-table-body">
+                        <!-- Data loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Feedback Review Section -->
+        <section id="feedback-review">
+            <h2>Feedback Review</h2>
+            <div class="feedback-list">
+                <ul id="feedback-list">
+                    <!-- Data loaded dynamically -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

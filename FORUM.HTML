@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Forum</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #DEE1DD; /* Light background */
+      color: #28363D; /* Dark text */
+    }
+
+    .header {
+      background-color: #658B6F; /* Green header */
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    /* Forum Section */
+    .forum {
+      margin-bottom: 2rem;
+      background-color: #C4CDC1; /* Light green */
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .forum h2 {
+      color: #2F575D; /* Accent color */
+      margin-bottom: 1rem;
+    }
+
+    .categories {
+      display: flex;
+      flex-direction: column; /* Changed to vertical layout */
+      gap: 1rem;
+    }
+
+    .category {
+      background-color: #99AEAD;
+      color: white;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .category:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Recommendations Section */
+    .recommendations {
+      background-color: #C4CDC1;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .recommendations h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #2F575D;
+    }
+
+    .resource-card {
+      background-color: #99AEAD;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .resource-card h3 {
+      margin-top: 0;
+    }
+
+    .resource-card p {
+      font-size: 0.9rem;
+      color: #28363D;
+    }
+
+    .resource-card .button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #2F575D;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .resource-card .button:hover {
+      background-color: #28363D;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #658B6F;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Community Forum</h1>
+  </header>
+
+  <main class="container">
+    <!-- Forum Section -->
+    <section class="forum">
+      <h2>Explore Forum Categories</h2>
+      <div class="categories">
+        <div class="category">Mental Health</div>
+        <div class="category">Stress Relief</div>
+        <div class="category">Relationships</div>
+        <div class="category">Career Advice</div>
+      </div>
+    </section>
+
+    <!-- Post Creation Section -->
+    <section class="forum">
+      <h2>Create a Post</h2>
+      <form>
+        <label for="post-title">Post Title:</label>
+        <input type="text" id="post-title" name="post-title" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #99AEAD; border-radius: 5px;">
+
+        <label for="post-content">Your Thoughts:</label>
+        <textarea id="post-content" name="post-content" rows="4" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #99AEAD; border-radius: 5px;"></textarea>
+
+        <button type="submit" style="background-color: #2F575D; color: white; padding: 0.7rem 1.5rem; border: none; border-radius: 5px; cursor: pointer;">Post</button>
+      </form>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="recommendations">
+      <h2>Curated Recommendations</h2>
+      <div class="resource-card">
+        <h3>Article: Coping with Anxiety</h3>
+        <p>Explore actionable tips to reduce anxiety and build resilience.</p>
+        <a href="#" class="button">Read More</a>
+      </div>
+      <div class="resource-card">
+        <h3>Book: The Happiness Trap</h3>
+        <p>Learn practical methods to navigate life's challenges with mindfulness.</p>
+        <a href="#" class="button">Get the Book</a>
+      </div>
+      <div class="resource-card">
+        <h3>Video: Managing Stress</h3>
+        <p>Watch this video on effective stress management strategies.</p>
+        <a href="#" class="button">Watch Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 SoulSpeak | Empowering Emotional Support</p>
+  </footer>
+</body>
+</html>

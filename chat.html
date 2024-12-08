@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotional Support Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SoulSpeak : An Emotional Support Platform</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Companions</a></li>
+        <li><a href="#">Chat</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="chat-request">
+      <h2>Chat Request Initiation</h2>
+      <p>Available Companions:</p>
+      <div class="companion-suggestions">
+        <button onclick="redirectToChat('naruto431')">naruto431</button>
+        <button onclick="redirectToChat('sasuke33')">sasuke33</button>
+        <button onclick="redirectToChat('kakashi444')">kakashi444</button>
+        <button onclick="redirectToChat('sakura230')">sakura230</button>
+      </div>
+    </section>
+
+    <section id="notification-panel">
+      <h2>Notifications</h2>
+      <div class="notification">
+        <p>No new notifications</p>
+      </div>
+    </section>
+
+    <section id="status-indicator">
+      <h2>User Status</h2>
+      <p>Status: <span class="status">Available</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mental Health Support</p>
+  </footer>
+
+  <script>
+    function redirectToChat(companionName) {
+      // Store selected companion in localStorage (optional for personalization)
+      localStorage.setItem('selectedCompanion', companionName);
+      // Redirect to chat window page
+      window.location.href = 'chatwindow.html';
+    }
+  </script>
+</body>
+</html>

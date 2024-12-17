@@ -1,0 +1,48 @@
+/* src/css/Homepage.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f5e3d4, #f5e3c9);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-container {
+    text-align: center;
+  }
+  
+  .home-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .home-card h1 {
+    margin-bottom: 1rem;
+    color: #f59e42;
+  }
+  
+  .home-card p {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .home-card button {
+    padding: 0.8rem 2rem;
+    background: #f59e42;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .home-card button:hover {
+    background: #d88534;
+  }
+  

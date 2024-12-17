@@ -1,0 +1,13 @@
+# npm init
+
+# npm i bcryptjs cookie-parser cors dotenv express jsonwebtoken mongoose nodemailer validator
+
+# npm install -g nodemon
+
+# nodemon server.js
+
+# npm cache clean --force
+
+# netstat -ano | findstr :8000
+
+# taskkill /PID 17972 /F

@@ -1,0 +1,63 @@
+/* src/css/LoginPage.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #d4e1f5, #c9c9f5);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-container {
+    text-align: center;
+  }
+  
+  .login-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .login-card h1 {
+    margin-bottom: 1rem;
+    color: #4a4ae3;
+  }
+  
+  .login-card input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .login-card button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background: #4a4ae3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-card button:hover {
+    background: #3737c9;
+  }
+  
+  .link {
+    color: #4a4ae3;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .link:hover {
+    color: #3737c9;
+  }
+  

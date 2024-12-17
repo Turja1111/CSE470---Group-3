@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb; /* Soft light background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the question container */
+.question-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for the question box */
+.question {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Question Text */
+.question h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #333333;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Styling for the options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styling for Option Buttons */
+.option-button {
+  background-color: #a2ccda;
+  border: 2px solid #ddd;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect for options */
+.option-button:hover {
+  background-color: #ebf1f7;
+  border-color: #69a8e6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Active effect when option is clicked */
+.option-button:active {
+  background-color: #6fa2c0;
+  transform: translateY(2px);
+}
+
+/* Selected Option Style */
+.option-button.selected {
+  background-color: #69a8e6;
+  color: white;
+  border-color: #3880b1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Question navigation (showing current question index) */
+.question-nav {
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #7a7a7a;
+  text-align: center;
+}
+
+/* Finish message after completing the quiz */
+.finish-message {
+  background-color: #fffdde; /* Soft yellow background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+  font-size: 1.25rem;
+  color: #444;
+}
+
+/* Heading inside finish message */
+.finish-message h2 {
+  color: #4a90e2; /* Subtle blue for success */
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Paragraph inside finish message */
+.finish-message p {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Styling for Visit Homepage button */
+.visit-homepage-button {
+  background-color: #69a8e6;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.visit-homepage-button:hover {
+  background-color: #3880b1;
+  transform: translateY(-2px);
+}
+
+.visit-homepage-button:active {
+  background-color: #2f75a3;
+  transform: translateY(2px);
+}
+
+/* Adding some animations to buttons for extra visual appeal */
+.option-button {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .question {
+      padding: 20px;
+  }
+  .question h2 {
+      font-size: 1.5rem;
+  }
+  .option-button {
+      font-size: 0.9rem;
+      padding: 12px;
+  }
+  .finish-message {
+      padding: 20px;
+  }
+}
